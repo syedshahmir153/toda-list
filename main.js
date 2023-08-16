@@ -6,9 +6,9 @@ window.addEventListener('load', () => {
     form.addEventListener('submit' , (e) => {
         e.preventDefault();
 
-        const task = input.values;
-
-        if (!task){
+        const task = input.value;
+        debugger;
+        if (!task == "" && task == null){
             alert("please fill out the task");
             return;
         }
